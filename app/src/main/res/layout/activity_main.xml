@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="Add 1" />
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnView"
+            android:text="View"
+            android:layout_toRightOf="@+id/btnadd"/>
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btreplace"
+            android:text="Replace"
+            android:layout_toRightOf="@+id/btnView"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:padding="10dp">
+        <EditText
+
+            android:id="@+id/addsurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add surname"
+            android:visibility="gone">
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/addname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add name"
+            android:visibility="gone"
+            android:layout_below="@+id/addsurname">
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/addpatronymic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add patronymic"
+            android:visibility="gone"
+            android:layout_below="@+id/addname">
+        </EditText>
+
+        <EditText
+            android:id="@+id/addtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="add time"
+            android:visibility="gone"
+            android:layout_below="@+id/addpatronymic">
+        </EditText>
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginLeft="120dp"
+            android:layout_below="@+id/addtime"
+            android:visibility="gone">
+
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>
